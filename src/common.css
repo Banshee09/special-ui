@@ -1,0 +1,104 @@
+/* Responsive related */
+.navbar-brand{
+    font-size:22px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.btn{
+    width:65px;
+}
+
+.price{
+    font-size:18px;
+    color:red;
+    font-weight: bold;
+}
+
+p{
+    font-size:15px;
+}
+
+@media (min-width:480px){
+    .navbar-brand{
+        font-size:24px;
+    }
+
+    .navbar-nav > li {
+        font-size: 18px;
+    } 
+    
+    h1{
+        font-size: 22px;
+    }
+    
+    .btn{
+        width:70px;
+        font-size:16px;
+    }
+
+    .table{
+        font-size:16px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+    
+    p{
+        font-size:16px;
+    }
+}
+
+
+/* Responsive not related */
+#main{
+    padding-top: 50px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.modal{
+    padding-top:200px;
+}
+
+.spinner{
+    background-color:transparent;
+    margin: auto;
+    margin-top:200px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #39d819;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .disabled{
+      background-color: lightgrey;
+  }
+
+  .resume-heading{
+      width:100%;
+      text-align: left;
+      border-radius: 8px;
+      padding: 8px;
+      margin-bottom: 20px;
+  }

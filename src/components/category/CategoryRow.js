@@ -19,7 +19,11 @@ const CategoryRow = (props) => {
     return (
         <tr>
             <td>
-                <Link to={`/${category.name}/${category._id}/products`} >{category.name}</Link>
+                
+                <Link to={`/${category.name}/${category._id}/products`} >
+                    <span className="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>&nbsp;
+                    {category.name}
+                </Link>
             </td>
             <td align='right'>
                 <EditButton selectRowAndPreFill={selectRowAndPreFill}/>&nbsp;

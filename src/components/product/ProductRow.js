@@ -18,7 +18,10 @@ const ProductRow = (props) => {
 
         <tr>
             <td>
-                <Link to={`/${product.name}/${product._id}/offers`} >{product.name}</Link>
+                <Link to={`/${product.name}/${product._id}/offers`} >
+                    <span className="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>&nbsp;
+                    {product.name}
+                </Link>
             </td>
             <td align='right'>
                 <EditButton selectRowAndPreFill={selectRowAndPreFill} />&nbsp;

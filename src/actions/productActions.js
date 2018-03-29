@@ -140,7 +140,12 @@ export const searchProducts = (text) => {
 }
 
 function showError(error) {
-    alert(error);
+
+    if (error.response)
+        alert(error.response.data.message);
+    else
+        alert(error);
+
     return {
         type: SHOW_ERROR,
         error: error

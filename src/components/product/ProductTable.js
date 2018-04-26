@@ -13,7 +13,9 @@ const ProductTable = (props) => {
             <tbody>
                 {products.map((product) => {
                     return <ProductRow key={product._id} product={product}
-                        selectProduct={props.selectProduct} />
+                        selectProduct={props.selectProduct}
+                        categoryId = {props.categoryId}
+                        categoryName = {props.categoryName} />
                 })}
             </tbody>
         </table>

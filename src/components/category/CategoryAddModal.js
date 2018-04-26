@@ -2,7 +2,7 @@ import React from "react";
 
 const CategoryAddModal = (props) => {
 
-    const handleClose = () =>{
+    const handleClose = () => {
         document.getElementById('addCategoryName').value = '';
     }
 
@@ -17,7 +17,8 @@ const CategoryAddModal = (props) => {
 
                     <div className="modal-body">
                         <div className="form-group">
-                            <input type="text" className="form-control" id="addCategoryName" placeholder="Name" />
+                            <label className="control-label" htmlFor="addCategoryName">Name</label>
+                            <input type="text" className="form-control" id="addCategoryName" placeholder="Enter Name" />
                         </div>
                     </div>
 

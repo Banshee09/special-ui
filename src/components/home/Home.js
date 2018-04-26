@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ToDo from "./ToDo";
 
 const Home = (props) => {
     return (
@@ -51,6 +52,7 @@ const Home = (props) => {
                 </table>
             </div>
 
+            <ToDo />
         </div>
     );
 };

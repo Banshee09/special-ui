@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import Spinner from "../components/common/Spinner";
 import { AddButton } from "../components/common/Buttons";
@@ -77,6 +78,7 @@ class ProductMain extends Component {
 
         return (
             <div id="main">
+                <Link to="/categories">&lt;&nbsp;Back</Link>
                 <h1>Products of {this.props.categoryName}</h1>
                 <SearchBar filter={this.props.productReducer.filter} 
                     handleChange={this.handleSearch} />
@@ -84,7 +86,9 @@ class ProductMain extends Component {
                 <br />
                 <br />
 
-                <ProductTable products={products}
+                <ProductTable products={products} 
+                    categoryName={this.props.categoryName} 
+                    categoryId={this.props.categoryId}
                     selectProduct={this.props.productDispatcher.selectProduct} />
 
                 <ProductAddModal handleAdd={this.handleAdd} />

@@ -14,7 +14,8 @@ const ProductEditModal = (props) => {
 
                     <div className="modal-body">
                         <div className="form-group">
-                            <input type="text" className="form-control" id="editProductName"/>
+                            <label className="control-label" htmlFor="editProductName">Name</label>
+                            <input type="text" placeholder="Name" className="form-control" id="editProductName"/>
                         </div>
                     </div>
                     

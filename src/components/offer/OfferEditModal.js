@@ -9,8 +9,8 @@ const OfferEditModal = (props) => {
         offerDetail = (
             <div className="form-group">
                 <div className="disabled">
-                    {offer.store.name}<br/>
-                    {offer.store.location}<br/>
+                    {offer.store.name}<br />
+                    {offer.store.location}<br />
                     {offer.date}
                 </div>
             </div>
@@ -28,9 +28,12 @@ const OfferEditModal = (props) => {
                     </div>
 
                     <div className="modal-body">
-                        <div className="form-group input-group">
-                            <span className="input-group-addon">$</span>
-                            <input type="text" className="form-control" id="editOfferPrice" />
+                        <div className="form-group">
+                            <label className="control-label" htmlFor="editOfferPrice">Price</label>
+                            <div className="input-group">
+                                <span className="input-group-addon">$</span>
+                                <input type="text" className="form-control" id="editOfferPrice" />
+                            </div>
                         </div>
                         {offerDetail}
                     </div>

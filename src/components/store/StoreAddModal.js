@@ -18,10 +18,12 @@ const StoreAddModal = (props) => {
                     </div>
                     <div className="modal-body">
                         <div className="form-group">
-                            <input type="text" className="form-control" id="addStoreName" placeholder="Store Name" />
+                            <label className="control-label" htmlFor="addStoreName">Name</label>
+                            <input type="text" className="form-control" id="addStoreName" placeholder="Name" />
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control" id="addStoreLocation" placeholder="Store Location" />
+                            <label className="control-label">Location</label>
+                            <input type="text" className="form-control" id="addStoreLocation" placeholder="Location" />
                         </div>
                     </div>
                     <div className="modal-footer">

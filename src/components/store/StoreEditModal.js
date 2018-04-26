@@ -13,9 +13,11 @@ const StoreEditModal = (props) => {
                     </div>
                     <div className="modal-body">
                         <div className="form-group">
+                            <label className="control-label" htmlFor="editStoreName">Name</label>
                             <input type="text" className="form-control" id="editStoreName" />
                         </div>
                         <div className="form-group">
+                            <label className="control-label" htmlFor="editStoreLocation">Location</label>
                             <input type="text" className="form-control" id="editStoreLocation" />
                         </div>
                     </div>

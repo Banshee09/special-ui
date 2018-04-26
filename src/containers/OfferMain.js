@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import Spinner from "../components/common/Spinner";
 import { AddButton } from "../components/common/Buttons";
@@ -87,6 +88,7 @@ class OfferMain extends Component {
 
         return (
             <div id="main">
+                <Link to={`/${this.props.categoryName}/${this.props.categoryId}/products`}>&lt;&nbsp;Back</Link>
                 <h1>Offers of {this.props.productName}</h1>
                 <SearchBar filter={this.props.offerReducer.locationFilter} handleChange={this.handleSearch} field="location" />
                 <AddButton />

@@ -47,9 +47,11 @@ class App extends Component {
                             productDispatcher={this.props.productDispatcher} />
                     )} />
 
-                    <Route path='/:product_name/:product_id/offers' render={(routeProps) => (
+                    <Route path='/:category_name/:category_id/:product_name/:product_id/offers' render={(routeProps) => (
                         <OfferMain productId={routeProps.match.params.product_id}
                             productName={routeProps.match.params.product_name}
+                            categoryId={routeProps.match.params.category_id}
+                            categoryName={routeProps.match.params.category_name}
                             offerReducer={this.props.offerReducer}
                             offerDispatcher={this.props.offerDispatcher} />
                     )} />

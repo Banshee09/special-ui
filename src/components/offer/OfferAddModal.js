@@ -30,16 +30,21 @@ const OfferAddModal = (props) => {
                     </div>
 
                     <div className="modal-body">
-                        <div className="form-group input-group">
-                            <span className="input-group-addon">$</span>
-                            <input type="text" className="form-control" id="addOfferPrice" placeholder="Price" />
+                        <div className="form-group">
+                            <label className="control-label" htmlFor="addOfferPrice">Price</label>
+                            <div className="input-group">
+                                <span className="input-group-addon">$</span>
+                                <input type="text" className="form-control" id="addOfferPrice" placeholder="Price" />
+                            </div>
                         </div>
 
                         <div className="form-group">
+                            <label className="control-label">Location</label>
                             <input className="form-control" placeholder="Enter location to narrow the store list " onChange={props.handleSearch} value={props.filter} />
                         </div>
 
                         <div className="form-group">
+                            <label className="control-label" htmlFor="addOfferStore">Store</label>
                             <select className="form-control" id="addOfferStore">
                                 <option value="0">Select a store from the list</option>
                                 {stores.map(store => (<option key={store._id} value={store._id}>{store.name} -- {store.location}</option>))}

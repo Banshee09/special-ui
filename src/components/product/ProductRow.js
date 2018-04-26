@@ -18,7 +18,7 @@ const ProductRow = (props) => {
 
         <tr>
             <td>
-                <Link to={`/${product.name}/${product._id}/offers`} >
+                <Link to={`/${props.categoryName}/${props.categoryId}/${product.name}/${product._id}/offers`} >
                     <span className="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>&nbsp;
                     {product.name}
                 </Link>

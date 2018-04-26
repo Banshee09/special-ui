@@ -18,6 +18,7 @@ const ProductAddModal = (props) => {
 
                     <div className="modal-body">
                         <div className="form-group">
+                            <label className="control-label" htmlFor="addProductName">Name</label>
                             <input type="text" className="form-control" id="addProductName" placeholder="Name" />
                         </div>
                     </div>
